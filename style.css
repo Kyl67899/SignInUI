@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --background: hsl(47, 88%, 63%);
+  --card-bg: hsl(0, 0%, 100%);
+  --text-grey: hsl(0, 0%, 50%);
+  --text: hsl(0, 0%, 7%);
+  --font-size: 16px;
+
+  /* ### Font */
+
+  /* - Family: [Figtree](https://fonts.google.com/specimen/Figtree) */
+  /* Weights: 500, 800 */
+  --font-family: "Figtree", sans-serif;
+  --font-weight: 600;
+}
+
+/* // <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.figtree-<uniquifier> {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* background-color: var(--text-grey) !important; */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--text-grey) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* image */
+img.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* side-card */
+.side-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  /* background-color: var(--background); */
+}
+
+/* card */
+.card {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 50em !important;
+  height: 45em !important;
+  background-color: var(--card-bg) !important;
+  color: var(--text) !important;
+  border-radius: 20px !important;
+  /* box-shadow: 5px 5px rgb(217, 214, 214); */
+}
+
+.card:hover {
+  box-shadow: 5px 5px rgb(217, 214, 214);
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+
+/* insde the card */
+
+.inside-card {
+  height: 99%;
+  width: 50%;
+  padding: 14px;
+}
+
+.socialMediaLogin h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text);
+  padding-bottom: 12px;
+}
+
+.socialMedia_link1,
+.socialMedia_link2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--text-grey);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.or-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+}
+
+.or {
+  color: var(--text-grey);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0 10px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.or-container::before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--text-grey);
+}
+
+.or-container::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: var(--text-grey);
+}
+
+/* signup and buttons */
+.tag {
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: var(--background); */
+  padding: 8px;
+  margin: 0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: none;
+  font-size: 13px;
+}
+
+.tag-text {
+  color: var(--text);
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tag-text a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tag-text a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.socialMedia_link1:hover {
+  background-color: var(--text-grey);
+  color: var(--background);
+}
+
+.socialMedia_link1 a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* form */
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.exampleInputEmail1 {
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+input#exampleInputEmail1 {
+  width: 100%;
+  height: 32px;
+  border-radius: 5px;
+}
+
+/* dont have an account */
+
+/* signup and buttons */
+.tag_left {
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: var(--background); */
+  /* padding: 8px; */
+  /* margin: 0; */
+  border-radius: 5px;
+  margin-top: 10px;
+  border: none;
+  font-size: 13px;
+}
+
+.tag-text_left {
+  color: var(--text);
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tag-text_left a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.tag-text_left a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* footer */
+footer.footer {
+  padding-top: 10px;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+  .cards {
+    width: 80% !important;
+    height: 78% !important;
+    flex-direction: column;
+  }
+
+  .side-card {
+    width: 100%;
+    height: 101%;
+  }
+
+  .inside-card {
+    width: 100% !important;
+    height: 101% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    width: 80% !important;
+    height: 78% !important;
+    flex-direction: column;
+  }
+
+  img.img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side-card {
+    width: 100% !important;
+    height: 101% !important;
+  }
+
+  .inside-card {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .cards {
+    width: 100% !important;
+    height: 1200px !important;
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  img.img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 15px 0 0 15px;
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .side-card {
+    width: 100% !important;
+    height: 50% !important;
+  }
+
+  .inside-card {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .card-text:last-child {
+    margin-top: 100px;
+  }
+}
